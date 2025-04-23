@@ -8,6 +8,5 @@ class Note(models.Model):
     type = models.ForeignKey('NoteType',on_delete=models.SET_NULL,null=True)
     user = models.ForeignKey(User,on_delete=models.SET_NULL,null=True)
 
-
 class NoteType(models.Model):
     title = models.CharField(max_length=300)
